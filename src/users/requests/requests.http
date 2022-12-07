@@ -1,0 +1,11 @@
+POST http://localhost:7777/auth/signup
+Content-type: application/json
+
+{
+  "email": "test@email.com",
+  "password": "content"
+}
+
+### GET request with parameter
+GET http://localhost:7777/auth/1
+###
