@@ -5,8 +5,10 @@ import {
   AfterUpdate,
   AfterRemove,
   AfterInsert,
+  OneToMany,
 } from 'typeorm';
 import { Exclude } from 'class-transformer';
+import { Report } from '../../reports/entities/report.entity';
 
 @Entity()
 export class User {
@@ -18,6 +20,9 @@ export class User {
   @Column()
   @Exclude()
   password: string;
+
+  @OneToMany(() => Report, (report) => report.user)
+  reports: Report[];
 
   // hooks call right after entity updates but not when table updates
   @AfterInsert()
