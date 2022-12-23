@@ -2,7 +2,7 @@ POST http://localhost:7777/auth/signup
 Content-type: application/json
 
 {
-  "email": "test2232@email.com",
+  "email": "test12232@email.com",
   "password": "22022000"
 }
 
@@ -15,7 +15,7 @@ POST http://localhost:7777/auth/signin
 Content-type: application/json
 
 {
-  "email": "test2232@email.com",
+  "email": "test12232@email.com",
   "password": "22022000"
 }
 ###

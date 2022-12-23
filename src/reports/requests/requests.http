@@ -12,3 +12,11 @@ Content-type: application/json
 }
 
 ###
+
+
+PATCH http://localhost:7777/reports/2
+Content-type: application/json
+
+{
+  "approved": false
+}
